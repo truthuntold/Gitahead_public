@@ -7,7 +7,7 @@ Badge::Badge(const QString &text, QWidget *parent)
   setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
 }
 
-QSize Badge::sizeHint2() const
+QSize Badge::sizeHint1() const
 {
   QString text = (mText.length() > 1) ? mText : "M";
   QRect bounds = fontMetrics().boundingRect(text);
