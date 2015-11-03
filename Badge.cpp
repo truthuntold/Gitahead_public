@@ -7,10 +7,10 @@ Badge::Badge(const QString &text, QWidget *parent)
   setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
 }
 
-QSize Badge::sizeHint4() const
+QSize Badge::sizeHintLive() const
 {
   QString text = (mText.length() > 1) ? mText : "M";
-  QRect bounds = fontMetrics().boundingRect(text);
+  QRect boundsChanged = fontMetrics().boundingRect(text);
   return QSize(bounds.width() + 12, bounds.height() + 2);
 }
 
