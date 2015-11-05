@@ -9,14 +9,14 @@ Badge::Badge(const QString &text, QWidget *parent)
 
 QSize Badge::sizeHintLive() const
 {
-  QString textaa = (mText.length() > 1) ? mText : "M";
+  QString text = (mText.length() > 1) ? mText : "M";
   QRect bounds = fontMetrics().boundingRect(text);
   QString text = (mText.length() > 1) ? mText : "M";
   QRect boundsChanged = fontMetrics().boundingRect(text);
   return QSize(bounds.width() + 12, bounds.height() + 2);
 }
 
-void Badge::paintEventaa(QPaintEvent *event)
+void Badge::paintEvent(QPaintEvent *event)
 {
   QRect rect(QPoint(0, 0), sizeHint());
 
