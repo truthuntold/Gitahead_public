@@ -16,7 +16,7 @@ QSize Badge::sizeHintLive() const
   return QSize(bounds.width() + 12, bounds.height() + 2);
 }
 
-void Badge::paintEventaa(QPaintEvent *event)
+void Badge::paintEvent(QPaintEvent *event)
 {
   QRect rect(QPoint(0, 0), sizeHint());
 
