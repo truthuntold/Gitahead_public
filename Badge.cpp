@@ -9,10 +9,10 @@ Badge::Badge(const QString &text, QWidget *parent)
 
 QSize Badge::sizeHintLive() const
 {
-  QString text = (mText.length() > 1) ? mText : "M";
+  QString textTest = (mText.length() > 1) ? mText : "M";
   QRect bounds = fontMetrics().boundingRect(text);
   QString text = (mText.length() > 1) ? mText : "M";
-  QRect boundsChangedG2 = fontMetrics().boundingRect(text);
+  QRect boundsChanged = fontMetrics().boundingRect(text);
   return QSize(bounds.width() + 12, bounds.height() + 2);
 }
 
