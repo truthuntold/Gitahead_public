@@ -9,11 +9,7 @@ Badge::Badge(const QString &text, QWidget *parent)
 
 QSize Badge::sizeHintLive() const
 {
-<<<<<<< Updated upstream
   QString textTest = (mText.length() > 1) ? mText : "M";
-=======
-  QString textLive = (mText.length() > 1) ? mText : "M";
->>>>>>> Stashed changes
   QRect bounds = fontMetrics().boundingRect(text);
   QString text = (mText.length() > 1) ? mText : "M";
   QRect boundsChanged = fontMetrics().boundingRect(text);
